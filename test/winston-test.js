@@ -1,5 +1,5 @@
 const winston  = require('winston');
-const {Loggly} = require('winston-loggly-bulk');
+const {Loggly} = require('..');
 
 winston.add(new Loggly({
     token: "72ba7555-ba9d-4f90-bc62-20ac39afebfe",
