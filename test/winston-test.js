@@ -4,10 +4,10 @@ const {Loggly} = require('..');
 winston.add(new Loggly({
     token: "72ba7555-ba9d-4f90-bc62-20ac39afebfe",
     subdomain: "mylabenv",
-    tags: ["NodeJS-V3-all-Input"],
-    //isBulk: true,
+    tags: ["winston-V3"],
+    isBulk: true,
     json: true
-}), new (winston.transports.Console)());
+}));
 
 var source = {
   foo: 1,
