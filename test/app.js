@@ -1,7 +1,7 @@
 const winston = require('winston');
-var {Loggly} = require('..');
+require('..');
 
-winston.add(new Loggly({
+winston.add(winston.transports.Loggly, {
     token: "72ba7555-ba9d-4f90-bc62-20ac39afebfe",
     subdomain: "mylabenv",
     tags: ["Winston-input-mode-everything"],
@@ -11,7 +11,7 @@ winston.add(new Loggly({
         size: 500,
         retriesInMilliSeconds: 1 * 5000,
     }
-}));
+});
 
 //Sending a single event both text and json object
 var source = {
