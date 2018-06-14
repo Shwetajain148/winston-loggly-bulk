@@ -1,13 +1,18 @@
 const winston  = require('winston');
-const {Loggly} = require('..');
+require('..');
 
-winston.add(new Loggly({
+winston.add(winston.transports.Loggly, {
     token: "72ba7555-ba9d-4f90-bc62-20ac39afebfe",
     subdomain: "mylabenv",
-    tags: ["winston-V3-bulk"],
+    tags: ["winston-V2-bulk"],
+    json: true,
     isBulk: true,
-    json: true
-}));
+    bufferOptions: {
+        size: 500,
+        retriesInMilliSeconds: 1 * 5000,
+
+    },
+});
 
 var source = {
   foo: 1,
