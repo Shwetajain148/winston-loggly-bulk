@@ -4,7 +4,7 @@ const {Loggly} = require('..');
 winston.add(new Loggly({
     token: "2a3a93aa-251d-4176-b6fa-aba7a12f3597",
     subdomain: "labenv4",
-    tags: ["correct-tag-bulk"],
+    tags: ["correct-tag-input"],
     json: true,
     bufferOptions: {
         size: 500,
@@ -22,6 +22,7 @@ var source = {
   }
 };
 
+winston.log('info', "From Correct tag input");
 winston.log('info', '');
 winston.log('info', null);
 
