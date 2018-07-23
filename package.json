@@ -28,6 +28,6 @@
     "vows": "0.8.0"
   },
   "main": "./lib/winston-loggly",
-  "scripts": { "test": "node test/correct-tag-bulk.js && node test/correct-tag-input.js && node test/undefined-tag-bulk.js && node test/undefined-tag-input.js" },
+  "scripts": { "test": "node test/undefined-tag-bulk.js && node test/undefined-tag-input.js" },
   "engines": { "node": ">= 0.8.0" }
 }
