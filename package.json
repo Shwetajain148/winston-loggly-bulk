@@ -27,7 +27,7 @@
     "winston"
   ],
   "dependencies": {
-    "node-loggly-bulk": "^2.0.1",
+    "node-loggly-bulk": "Shwetajain148/node-loggly-bulk.git#LOG-443",
     "clone": "^2.1.1",
     "winston": "^3.0",
     "winston-transport": "^4.2.0"
@@ -37,7 +37,10 @@
   },
   "main": "./lib/winston-loggly",
   "scripts": {
-    "test": "vows --spec"
+    "test": "node test/correct-tag-input.js &&
+             node test/correct-tag-bulk.js &&
+             node test/undefind-tag-bulk.js &&
+             node test/undefined-tag-input.js"
   },
   "engines": {
     "node": ">= 6.4.0"
