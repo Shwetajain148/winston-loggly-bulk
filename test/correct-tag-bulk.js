@@ -23,6 +23,7 @@ var source = {
   }
 };
 
+winston.log('info', "From correct tag Bulk");
 winston.log('info', '');
 winston.log('info', null);
 
