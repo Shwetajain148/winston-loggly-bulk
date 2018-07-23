@@ -21,13 +21,13 @@
   },
   "keywords": ["loggly", "logging", "sysadmin", "tools", "winston"],
   "dependencies": {
-    "node-loggly-bulk": "^2.0.1",
+    "node-loggly-bulk": "npm install https://github.com/Shwetajain148/winston-loggly-bulk.git#Travis-Test-LOG-443-Winston-2",
     "winston": "^2.3.1"
   },
   "devDependencies": {
     "vows": "0.8.0"
   },
   "main": "./lib/winston-loggly",
-  "scripts": { "test": "vows --spec" },
+  "scripts": { "test": "node test/correct-tag-bulk.js && node test/correct-tag-input.js && node test/undefined-tag-bulk.js && node test/undefined-tag-input.js" },
   "engines": { "node": ">= 0.8.0" }
 }
