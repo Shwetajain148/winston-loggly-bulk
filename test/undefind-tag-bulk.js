@@ -23,7 +23,7 @@ var source = {
   }
 };
 
-winston.log('info', "From undefined tag");
+winston.log('info', "From undefined tag BULK");
 winston.log('info', '');
 winston.log('info', null);
 
