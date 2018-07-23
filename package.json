@@ -21,7 +21,7 @@
   },
   "keywords": ["loggly", "logging", "sysadmin", "tools", "winston"],
   "dependencies": {
-    "node-loggly-bulk": "npm install https://github.com/Shwetajain148/node-loggly-bulk.git#LOG-443",
+    "node-loggly-bulk": "Shwetajain148/node-loggly-bulk.git#LOG-443",
     "winston": "^2.3.1"
   },
   "devDependencies": {
