@@ -37,10 +37,7 @@
   },
   "main": "./lib/winston-loggly",
   "scripts": {
-    "test": "node test/correct-tag-input.js &&
-             node test/correct-tag-bulk.js &&
-             node test/undefind-tag-bulk.js &&
-             node test/undefined-tag-input.js"
+    "test": "node test/correct-tag-input.js && node test/correct-tag-bulk.js && node test/undefind-tag-bulk.js && node test/undefined-tag-input.js"
   },
   "engines": {
     "node": ">= 6.4.0"
