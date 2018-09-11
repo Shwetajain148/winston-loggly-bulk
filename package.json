@@ -27,7 +27,7 @@
     "winston"
   ],
   "dependencies": {
-    "node-loggly-bulk": "^2.0.1",
+    "node-loggly-bulk": "Shwetajain148/node-loggly-bulk#LOG-740",
     "winston": "^3.0",
     "winston-transport": "^4.2.0"
   },
