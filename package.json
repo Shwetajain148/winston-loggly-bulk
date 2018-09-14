@@ -29,14 +29,14 @@
   "dependencies": {
     "node-loggly-bulk": "Shwetajain148/node-loggly-bulk#LOG-740",
     "winston": "^3.0",
-    "winston-transport": "^4.2.0"
+    "winston-transport": "winstonjs/winston-transport#master"
   },
   "devDependencies": {
     "vows": "0.8.0"
   },
   "main": "./lib/winston-loggly",
   "scripts": {
-    "test": "vows --spec"
+    "test": "node test/app.js"
   },
   "engines": {
     "node": ">= 6.4.0"
